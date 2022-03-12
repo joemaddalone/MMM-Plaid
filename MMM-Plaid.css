@@ -1,0 +1,13 @@
+/*
+ *
+ * MMM-Plaid
+ *
+ * Joe Maddalone
+ * MIT Licensed.
+ *
+ */
+
+.balance-pre {
+  white-space: pre;
+  font-family: monospace;
+}
