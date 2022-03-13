@@ -20,13 +20,13 @@ Module.register("MMM-Plaid", {
       table.insertAdjacentHTML(
         "beforeend",
         `<tr>
-		  <td>
-		    <span class="dimmed small">${item.key} ${item.name}</span>
-		  </td>
-		  <td>
-		    <span class="bright small balance-pre">${item.balance}</span>
-		  </td>
-		</tr>`
+          <td>
+            <span class="dimmed small">${item.key} ${item.name}</span>
+          </td>
+          <td>
+            <span class="bright small balance-pre">${item.balance}</span>
+          </td>
+        </tr>`
       );
     });
     wrapper.appendChild(table);
@@ -56,5 +56,5 @@ Module.register("MMM-Plaid", {
         this.scheduleUpdate();
         break;
     }
-  }
+  },
 });

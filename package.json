@@ -5,16 +5,6 @@
   "main": "MMM-Plaid.js",
   "author": "Joe Maddalone",
   "license": "MIT",
-  "devDependencies": {
-    "grunt": "latest",
-    "grunt-eslint": "latest",
-    "grunt-jsonlint": "latest",
-    "grunt-markdownlint": "^1.0.13",
-    "grunt-stylelint": "latest",
-    "grunt-yamllint": "latest",
-    "stylelint-config-standard": "latest",
-    "time-grunt": "latest"
-  },
   "dependencies": {
     "accounting": "^0.4.1",
     "plaid": "^10.0.0"
