@@ -39,14 +39,10 @@ Module.register("MMM-Plaid", {
     return "Account Balances";
   },
   getPlaidData: function () {
-    var self = this;
-    self.sendSocketNotification("GET_ACCOUNTS", self.config);
+    this.sendSocketNotification("GET_ACCOUNTS", this.config);
   },
   scheduleUpdate: function (delay) {
-    var self = this;
-    setTimeout(function () {
-      self.getPlaidData();
-    }, 60 * 1000 * 30);
+    setTimeout(this.getPlaidData.bind(this), 60 * 1000 * 30);
   },
   socketNotificationReceived: function (notification, payload) {
     switch (notification) {
@@ -56,5 +52,5 @@ Module.register("MMM-Plaid", {
         this.scheduleUpdate();
         break;
     }
-  },
+  }
 });
