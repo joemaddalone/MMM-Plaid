@@ -38,3 +38,6 @@ var config = {
   ]
 };
 ```
+
+![MMD-Plaid Screenshot](https://raw.githubusercontent.com/joemaddalone/mmm-plaid/master/screenshot.png)
+
